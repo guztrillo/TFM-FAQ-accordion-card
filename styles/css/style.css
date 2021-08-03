@@ -86,7 +86,7 @@ html, body {
   border-bottom: 1px solid #e7e7e9;
   padding: 15px 0; }
 
-@media (min-width: 900px) {
+@media (min-width: 1190px) {
   .main {
     flex-direction: row;
     padding: 20px;
