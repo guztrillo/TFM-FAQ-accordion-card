@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
+
+.main {
+     font-family: 'Kumbh Sans', sans-serif;
+}
+
+.faq-content-heading {
+     font-weight: 700;
+     text-align: center;
+}
+
+.faq-questions {
+     font-size: 12px;
+}
+
+.faq-q {
+     h2{
+          color: $very-grayish-blue;
+          font-weight: 400;
+          font-size: 13px;
+          &:hover {
+               transition: all 0.2s ease-out;
+               color: $soft-red;
+          }
+     }
+}
+
+.faq-a {
+     color: $grayish-blue;
+}

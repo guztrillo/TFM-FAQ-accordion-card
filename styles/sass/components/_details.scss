@@ -1,0 +1,72 @@
+.faq-q {
+     cursor: pointer;
+     list-style: none;
+}
+
+summary::-webkit-details-marker {
+     display: none;
+}
+
+// .faq-question[open] .faq-q::before {
+//      position: fixed;
+//      top: 0;
+//      right: 0;
+//      bottom: 0;
+//      left: 0;
+//      content: "";
+//      cursor: default;
+// }
+
+.faq-arrow img {
+     transition: transform 0.5s ease;
+}
+
+.faq-question summary h2 {
+     transition: all 0.2s;
+}
+
+
+.faq-question[open] {
+     .faq-q h2 {
+          color: $desaturated-blue;
+          font-weight: 700;
+     }
+     .faq-arrow img {
+     transform: rotate(180deg)
+     }
+}
+
+
+details summary ~ * {
+     animation: closed 0.2s ease-out;
+}
+
+
+details[open] summary ~ * {
+     animation: opened 0.3s ease-in;
+}
+
+@keyframes opened {
+     from {
+          opacity: 0; 
+          transform: translateY(-10px);
+     }
+     to {
+          opacity: 1; 
+          transform: translateY(0);
+     }
+}
+
+
+@keyframes closed {
+     from {
+          opacity: 1; 
+          transform: translateY(0);
+     }
+     to {
+          opacity: 0; 
+          transform: translateY(-10px);
+     }
+}
+
+
